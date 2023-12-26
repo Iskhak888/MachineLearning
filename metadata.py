@@ -10,6 +10,7 @@ def get_image_metadata(image_path):
                 for tag, value in exif_data.items():
                     tag_name = TAGS.get(tag, tag)
                     metadata[tag_name] = value
+                    
                 
                 # Доступ к размеру изображения
                 width, height = img.size
